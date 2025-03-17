@@ -1,0 +1,48 @@
+### Node.js ###
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+### TypeScript ###
+*.tsbuildinfo
+*.d.ts.map
+
+### Prisma ###
+prisma/dev.db
+prisma/dev.db-journal
+prisma/migrations/
+
+### Build Output ###
+dist/
+build/
+.out/
+
+### Environment ###
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+### Logs ###
+logs/
+*.log
+*.log.*
+
+### OS Specific ###
+.DS_Store
+Thumbs.db
+
+### IDE and Editor ###
+.vscode/
+.idea/
+*.swp
+
+### Miscellaneous ###
+coverage/
+nodemon-debug.log
+
+### PM2 ###
+.pids
