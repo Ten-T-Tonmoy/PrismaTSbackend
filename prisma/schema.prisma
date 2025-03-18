@@ -13,7 +13,22 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+//npx prisma migrate dev --name thisIsMigName
+//thats how u migrate each time u change the schema.prisma
+//----------------------------
+//this creates SQL which actually used to change the database
+//
 //must have id
+//migrating=>
+/*
+  migration is a record of changes to db overtime
+  migration is done when schema.prisma is modified
+  prisma migrate dev --name to apply changes
+
+  prisma auto generates SQL file when migration happens
+
+
+*/
 model User {
   id        Int      @id @default(autoincrement())
   name      String
